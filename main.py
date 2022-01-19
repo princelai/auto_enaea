@@ -156,7 +156,7 @@ class StudyEnaea:
         else:
             project_name = ''
 
-        self.driver.find_element_by_xpath(f'//*[@id="sideNav"]/ul/li[{k}]/a').click()
+        self.driver.find_element_by_xpath(f'//*[@id="sideNav"]/ul/li[3]/a').click()
         _ = self.wait_render(By.ID, "J_tabsContent", '课程详情页加载失败')
         self.driver.find_element_by_xpath('//*[@id="J_tabsContent"]/div/ul/li[2]/span').click()
         _ = self.wait_render(By.ID, "J_myOptionRecords", '未学课程详情页加载失败')
